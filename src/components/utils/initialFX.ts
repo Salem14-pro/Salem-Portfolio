@@ -1,4 +1,4 @@
-import { SplitText } from "gsap/SplitText";
+import { SplitText } from "gsap-trial/SplitText";
 import gsap from "gsap";
 import { smoother } from "../Navbar";
 
@@ -47,18 +47,6 @@ export function initialFX() {
       y: 0,
       stagger: 0.025,
       delay: 0.3,
-    }
-  );
-
-  gsap.fromTo(
-    ".landing-info-h2",
-    { opacity: 0, y: 30 },
-    {
-      opacity: 1,
-      duration: 1.2,
-      ease: "power1.inOut",
-      y: 0,
-      delay: 0.8,
     }
   );
   gsap.fromTo(
