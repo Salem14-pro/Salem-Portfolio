@@ -38,11 +38,11 @@ const Navbar = () => {
           Logo
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:muhammedsalem992@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          muhammedsalem992@gmail.com
         </a>
         <ul>
           <li>
@@ -51,7 +51,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a data-href="#work" href="#work">
+            <a data-href="#career" href="#career">
               <HoverLinks text="WORK" />
             </a>
           </li>

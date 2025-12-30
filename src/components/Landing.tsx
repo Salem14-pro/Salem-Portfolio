@@ -20,7 +20,7 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-1">Web Developer</div>
               <div className="landing-h2-2">Designer</div>
             </h2>
-            <h2>
+            <h2 style={{ display: 'none' }}>
               <div className="landing-h2-info">Designer</div>
               <div className="landing-h2-info-1">Web Developer</div>
             </h2>
