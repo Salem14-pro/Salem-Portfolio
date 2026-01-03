@@ -1,7 +1,25 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { useState } from "react";
 import "./styles/Contact.css";
 
 const Contact = () => {
+  const [message, setMessage] = useState<string | null>(null);
+
+  const showMessage = (msg: string) => {
+    setMessage(msg);
+    setTimeout(() => setMessage(null), 3000);
+  };
+
+  const handleGithubClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    showMessage("You need valid authorization to access this");
+  };
+
+  const handleTwitterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    showMessage("Unavailable at the moment");
+  };
+
   return (
     <div className="contact-section section-container" id="contact">
       <div className="contact-container">
@@ -24,15 +42,16 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/Salem14-pro"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
+              onClick={handleGithubClick}
             >
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/salemmuhammed/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -44,11 +63,12 @@ const Contact = () => {
               target="_blank"
               data-cursor="disable"
               className="contact-social"
+              onClick={handleTwitterClick}
             >
               Twitter <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/salem_.muhammed/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -66,6 +86,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {message && (
+        <div className="bottom-message">
+          {message}
+        </div>
+      )}
     </div>
   );
 };

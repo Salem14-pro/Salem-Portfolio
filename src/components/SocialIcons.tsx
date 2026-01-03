@@ -6,10 +6,27 @@ import {
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
+  const [message, setMessage] = useState<string | null>(null);
+
+  const showMessage = (msg: string) => {
+    setMessage(msg);
+    setTimeout(() => setMessage(null), 3000);
+  };
+
+  const handleGithubClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    showMessage("You need valid authorization to access this");
+  };
+
+  const handleTwitterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    showMessage("Unavailable at the moment");
+  };
+
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
 
@@ -60,22 +77,22 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/Salem14-pro" target="_blank" onClick={handleGithubClick}>
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/salemmuhammed/" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href="https://x.com" target="_blank">
+          <a href="https://x.com" target="_blank" onClick={handleTwitterClick}>
             <FaXTwitter />
           </a>
         </span>
         <span>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/salem_.muhammed/" target="_blank">
             <FaInstagram />
           </a>
         </span>
@@ -86,6 +103,11 @@ const SocialIcons = () => {
           <TbNotes />
         </span>
       </a>
+      {message && (
+        <div className="bottom-message-icons">
+          {message}
+        </div>
+      )}
     </div>
   );
 };

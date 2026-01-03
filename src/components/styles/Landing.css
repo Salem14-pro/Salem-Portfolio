@@ -190,6 +190,7 @@
   bottom: 40px;
   top: inherit;
   z-index: 9;
+  overflow: hidden;
 }
 .landing-info h3 {
   font-size: 22px;
@@ -211,6 +212,7 @@
   flex-wrap: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
+  overflow: hidden;
 }
 .landing-h2-info-1 {
   position: absolute;
@@ -225,6 +227,8 @@ h2.landing-info-h2 {
   font-weight: 600;
   position: relative;
   margin-left: -5px;
+  overflow: hidden;
+  height: 50px;
 }
 .landing-h2-2 {
   position: absolute;

@@ -101,3 +101,38 @@ div.resume-button span {
     margin-top: -1.5px;
   }
 }
+
+/* Bottom message for social icons */
+.bottom-message-icons {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  z-index: 9999;
+  animation: slideUpIcons 0.3s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideUpIcons {
+  from {
+    bottom: 60px;
+    opacity: 0;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bottom-message-icons {
+    font-size: 12px;
+    padding: 10px 20px;
+    bottom: 60px;
+  }
+}
