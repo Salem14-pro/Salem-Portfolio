@@ -56,7 +56,7 @@ const Work = () => {
           {[
             { name: "Braniac", category: "AI E-Learning Platform", tools: "AI, React, Quiz Generation", link: "https://braniaclearning.netlify.app", image: "/images/braniac.png" },
             { name: "Sweet Fooddie", category: "Food Website", tools: "HTML, CSS, JavaScript", link: "https://sweet-fooddie.netlify.app", image: "/images/sweet-foodie.png" },
-            { name: "Tetris Remade", category: "Game Development", tools: "JavaScript, HTML Canvas", link: "https://blockytetrix.netlify.app", image: "/images/tetris.png" },
+            { name: "Tetris Remade", category: "Game Development", tools: "JavaScript, HTML Canvas", link: "https://bloxtopia.netlify.app", image: "/images/tetris.png" },
             { name: "SV-Column Design", category: "Web Design", tools: "HTML, CSS, Responsive Design", link: "https://sv-columndesign.netlify.app", image: "/images/sv-column.png" },
             { name: "Amaze", category: "Web Application", tools: "React", link: "https://amaze-pms-ten.vercel.app", image: "/images/Amaze.png" },
             { name: "Portfolio Website", category: "Web Design", tools: "React, TypeScript, GSAP, Three.js", link: "#", image: "/images/placeholder.webp" }
