@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          <img src="/images/3D white.png" alt="Logo" />
         </a>
         <a
           href="mailto:muhammedsalem992@gmail.com"
