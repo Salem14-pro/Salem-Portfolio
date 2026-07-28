@@ -197,6 +197,12 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+}
+.loader-title img {
+  height: 14px;
+  width: auto;
 }
 @keyframes blink {
   0% {
@@ -352,6 +358,9 @@
   .loader-title {
     font-size: 16px;
   }
+  .loader-title img {
+    height: 16px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .loading-header {
@@ -359,5 +368,8 @@
   }
   .loader-title {
     font-size: 18px;
+  }
+  .loader-title img {
+    height: 18px;
   }
 }
