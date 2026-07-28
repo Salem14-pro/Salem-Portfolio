@@ -48,7 +48,7 @@
   align-items: center;
 }
 .navbar-title img {
-  height: 14px;
+  height: 22px;
   width: auto;
 }
 @media only screen and (min-width: 500px) {
@@ -67,7 +67,7 @@
     font-size: 16px;
   }
   .navbar-title img {
-    height: 16px;
+    height: 26px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -90,6 +90,6 @@
     font-size: 18px;
   }
   .navbar-title img {
-    height: 18px;
+    height: 30px;
   }
 }
